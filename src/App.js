@@ -6,8 +6,15 @@ function App() {
   return (
     <div>
     <h1>Hello Material Ui</h1>
-    <button>Click Me</button>
-    <Button color = "primary">Material button</Button>
+    
+    <Button
+     color = "primary"
+     variant="outlined"
+    //  disabled
+     onClick={()=>{alert("Button Clicked Successfully")}}
+     >
+    MUI Button
+    </Button>
       
     </div>
   );
