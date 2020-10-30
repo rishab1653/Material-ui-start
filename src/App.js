@@ -1,8 +1,10 @@
 import React,{useState} from 'react'
 import './App.css';
 import {ButtonGroup, Button} from '@material-ui/core'
+import FavoriteBorder from '@material-ui/icons/FavoriteBorder'
+import {Favorite} from '@material-ui/icons'
 import {Checkbox} from '@material-ui/core'
-import {Delete} from '@material-ui/icons'
+
 
 
 
@@ -27,6 +29,15 @@ function App() {
     <Checkbox color="primary" value = "ghi" onChange={(e)=>{greet(e)}}/>
     
     <Checkbox color="primary" value = "ghi" indeterminate onChange={(e)=>{greet(e)}}/>
+    <Checkbox 
+      color="primary" 
+      value = "ghi"
+      color = "secondary"
+      icon={<FavoriteBorder/>}
+      checkedIcon={<Favorite/>}
+      onChange={(e)=>{greet(e)}}
+      />
+
     </div>
   )
 }
