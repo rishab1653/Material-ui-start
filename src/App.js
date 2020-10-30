@@ -25,6 +25,8 @@ function App() {
     <Checkbox color="primary" value = "abc" onChange={(e)=>{greet(e)}}/>
     <Checkbox color="primary" value = "def" onChange={(e)=>{greet(e)}}/>
     <Checkbox color="primary" value = "ghi" onChange={(e)=>{greet(e)}}/>
+    
+    <Checkbox color="primary" value = "ghi" indeterminate onChange={(e)=>{greet(e)}}/>
     </div>
   )
 }
