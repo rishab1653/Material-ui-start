@@ -12,7 +12,7 @@ function App() {
     setColor("secondary")
     alert("Cliked ")
     setDisabled(true)
-    startIcon="{<Delete/>}"
+  
    
 
   }
@@ -26,8 +26,11 @@ function App() {
      disabled={disabled}
     //  disabled
      onClick={()=>{change()}}
+    //  startIcon={<Delete />}
+    endIcon = {<Delete/>}
      >
     MUI Button
+     
     </Button>
       
     </div>
