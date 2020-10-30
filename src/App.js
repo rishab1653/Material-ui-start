@@ -1,6 +1,8 @@
 import React,{useState} from 'react'
 import './App.css';
+import {Delete} from '@material-ui/icons'
 import {Button} from '@material-ui/core'
+
 
 function App() {
 
@@ -10,6 +12,7 @@ function App() {
     setColor("secondary")
     alert("Cliked ")
     setDisabled(true)
+    startIcon="{<Delete/>}"
    
 
   }
